@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+@font-face {
+  font-family: "Lato Regular";
+  src: url("../assets/fonts/lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Lato Medium";
+  src: url("../assets/fonts/lato/Lato-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Lato Semibold";
+  src: url("../assets/fonts/lato/Lato-Semibold.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  content: url("../assets/images/icons/calendar.svg"); 
+}
+
+input.heart::-webkit-calendar-picker-indicator {
+  content: url("../assets/images/icons/calendar-heart.svg");
+}
+
+input[type="date"]::before {
+	color: #999999;
+	content: attr(placeholder);
+}
+input[type="date"] {
+	color: #ffffff;
+}
+input[type="date"]:focus,
+input[type="date"]:valid {
+	color: #666666;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+	content: "" !important;
+}
+
+.options-container:nth-last-child(1) > div {
+  border: none;
+}
