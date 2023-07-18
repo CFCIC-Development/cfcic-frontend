@@ -8,10 +8,10 @@ const PaginatedContent = ({currentData}) => {
     {
        user_data.map((item, index) =>
         <tr className='w-full h-[4rem] text-[16px] justify-start align-bottom border-b-2 border-[#005232]' key={index} >
-            <td className='text-[#005232] w-1/3'>{`${item.Data.first_name} ${item.Data.last_name}`}</td>
-            <td className='text-[#005232] w-1/3'>{`${item.Data.Phone_number}`}</td>
-            <td className='text-[#005232] w-1/3'>{`${item.Data.center}`}</td>
-            <td className='text-[#005232] w-1/3'>{`${item.Data.Name_of_resident_pastor}`}</td>
+            <td className='text-[#2f5284] w-1/3'>{`${item.Data.first_name} ${item.Data.last_name}`}</td>
+            <td className='text-[#2f5284] w-1/3'>{`${item.Data.Phone_number}`}</td>
+            <td className='text-[#2f5284] w-1/3'>{`${item.Data.center}`}</td>
+            <td className='text-[#2f5284] w-1/3'>{`${item.Data.Name_of_resident_pastor}`}</td>
         </tr>
        )
    }
