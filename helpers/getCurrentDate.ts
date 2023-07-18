@@ -5,4 +5,4 @@ const getCurrentDate = (): string => {
     return `${yyyy}-${mm}-${dd}`
 }
 
-export default getCurrentDate
+export default getCurrentDate 
